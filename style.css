@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(212deg, 45%, 89%);
+  display: grid;
+  place-items: center;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 20%;
+  text-align: center;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+@media only screen and (max-width: 68.75em) {
+  .container {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .container {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 43.75em) {
+  .container {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .container {
+    width: 80%;
+  }
+}
+.container > * {
+  margin-bottom: 2rem;
+}
+.container__qr {
+  width: 100%;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.container__heading {
+  font-size: 2rem;
+  color: hsl(218deg, 44%, 22%);
+  font-weight: 700;
+}
+.container__sub {
+  font-size: 1.5rem;
+  color: hsl(220deg, 15%, 55%);
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=style.css.map */
